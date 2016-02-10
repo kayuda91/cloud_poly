@@ -218,6 +218,7 @@ table.cart button {
   font-size: 27px;
   line-height: 32px;
   bottom: 0;
+  vertical-align: middle;
   /*position: absolute;*/
 }
 .popular .item {
@@ -336,7 +337,7 @@ table.cart button {
 }
 /*--end font section--*/
 .popular-example {
-  margin-top: 28px;
+  margin-top: 0px;
   margin-left: 1px;
 }
 @media (min-width: 768px) {
@@ -657,7 +658,7 @@ footer .footer-nav li a {
 }
 @media (min-width: 1200px) {
   .popular-list li {
-    margin-right: 100px;
+    margin-right: 135px;
     float: left;
     margin-top: 0;
   }
@@ -705,4 +706,37 @@ footer .footer-nav li a {
   .poly-info .count p.iso {
     margin-right: 68px;
   }
+}
+.popular-list {
+  padding-left: 41px;
+}
+.popular-list .item {
+  min-height: 450px;
+  display: table;
+}
+.popular-list .item div {
+  display: table-cell;
+  text-align: center;
+}
+.popular-list .item .first {
+  height: 90px;
+  vertical-align: middle;
+}
+.popular-list .item .first p {
+  letter-spacing: 1px;
+}
+.popular-list .item .middle {
+  /*display: table-cell;*/
+  height: 230px;
+  vertical-align: top;
+}
+.popular-list .item .last {
+  height: 72px;
+  vertical-align: top;
+}
+.popular-list .item .last button {
+  margin-left: 20px;
+}
+.popular-list .item .rowt {
+  display: table-row;
 }

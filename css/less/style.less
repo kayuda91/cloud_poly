@@ -225,6 +225,7 @@ table.cart {
     font-size: 27px;
     line-height: 32px;
     bottom:0;
+    vertical-align: middle;
     /*position: absolute;*/
   }
   .item {
@@ -353,7 +354,7 @@ table.cart {
 }
 /*--end font section--*/
 .popular-example {
-  margin-top: 28px;
+  margin-top: 0px;
   margin-left: 1px;
   @media (min-width: 768px){
     height: 705px;
@@ -666,7 +667,7 @@ footer {
   li{
 
     @media (min-width: 1200px){
-      margin-right: 100px;
+      margin-right: 135px;
       float: left;
       margin-top: 0;
     }
@@ -713,5 +714,42 @@ footer {
       }
       letter-spacing: 0.4px;
     }
+  }
+}
+
+.popular-list {
+  padding-left: 41px;
+  .item{
+    min-height: 450px;
+    display: table;
+    div{
+      display: table-cell;
+      text-align: center;
+    }
+
+    .first{
+      height: 90px;
+      vertical-align: middle;
+      p{
+        letter-spacing: 1px;
+      }
+    }
+
+    .middle {
+      /*display: table-cell;*/
+      height: 230px;
+      vertical-align: top;
+    }
+    .last {
+      height: 72px;
+      vertical-align: top;
+        button {
+          margin-left: 20px;
+      }
+    }
+    .rowt {
+      display: table-row;
+    }
+
   }
 }
