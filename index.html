@@ -12,6 +12,28 @@
 
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+
+        var map;
+        function initMap() {
+            var myLatlng = new google.maps.LatLng(59.9003337,30.4302394);
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatlng,
+                zoom: 17,
+                scrollwheel: false
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatlng
+
+            });
+            marker.setMap(map);
+        }
+
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOjoe37fjYzptlAdgynxWEBaUi2AFa9DE&callback=initMap">
+    </script>
 
 </head>
 <body>
@@ -505,11 +527,10 @@
             </div>
         </div>
         <div class="clearfix"></div>
+
         <div class="row">
-            <div class="map">
-                <div class="img">
-                    <img src="images/Screenshot_3.png" class="img-responsive">
-                </div>
+            <div class="google-map" style="">
+                <div class="map" id="map"></div>
                 <div class="caption">
                     <span class="address">проспект Обуховской обороны 70к2, офис 407</span>
                     <span class="link"><a href="#">Контакты</a> </span>
@@ -564,5 +585,6 @@
     </div>
 </footer>
 </div>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
