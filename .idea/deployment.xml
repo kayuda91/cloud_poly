@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
-      <paths name="ftp.kayuda91.nichost.ru ">
+      <paths name="ftp.kayuda-ill.nichost.ru ">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

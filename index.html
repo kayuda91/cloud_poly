@@ -5,42 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/normalize.css" >
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.min.css">
+    <!--link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic' rel='stylesheet' type='text/css'-->
 
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript">
-
-        var map;
-        function initMap() {
-            var myLatlng = new google.maps.LatLng(59.9003337,30.4302394);
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: myLatlng,
-                zoom: 17,
-                scrollwheel: false
-            });
-
-            var marker = new google.maps.Marker({
-                position: myLatlng
-
-            });
-            marker.setMap(map);
-        }
-
-    </script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOjoe37fjYzptlAdgynxWEBaUi2AFa9DE&callback=initMap">
-    </script>
 
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 <header>
     <div class="container-fluid">
-        <div class="row text-center">
+        <div class="row text-center container">
             <div class="header-top">
                 <div class="pull-left col-md-4 col-xs-12 col-sm-6 text-left name">
                     <img src="images/fill-13-copy@2x.png" class="cloud">
@@ -94,17 +68,19 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <div style="background: rgba(0, 0, 0, 0.37); z-index:9999;">
-                            <img class="center-block img-responsive" src="images/main-back@3x.png" alt="">
+                            <img class="center-block img-responsive" src="images/visitki-za-15-minut.jpg" alt="">
                         </div>
                         <div class="carousel-caption">
-                            <h2>Печатаем визитки за 15 минут</h2>
+                            <h2 class="hidden-xs">Печатаем визитки за 15 минут</h2>
+                            <h4 class="visible-xs">Печатаем визитки за 15 минут</h4>
                             <button class="rounded">Подробнее</button>
                         </div>
                     </div>
                     <div class="item">
-                        <img class="center-block img-responsive" src="images/main-back@2x.png" alt="">
+                        <img class="center-block img-responsive" src="images/visitki-za-15-minut.jpg" alt="">
                         <div class="carousel-caption">
-                            <h3>Печатаем визитки за 15 минут</h3>
+                            <h2 class="hidden-xs">Печатаем визитки за 15 минут</h2>
+                            <h4 class="visible-xs">Печатаем визитки за 15 минут</h4>
                             <button class="rounded">Подробнее</button>
                         </div>
                     </div>
@@ -129,146 +105,7 @@
         <div class="row">
             <div class="popular text-center">
                 <div>
-
-                    <h3 style="    margin-bottom: 5px;">Популярные заказы</h3>
-
-                    <!--div class="col-md-12 col-sm-12 item"-->
-
-                        <!--table align="center" border="0" class="popular-orders">
-                            <tr>
-                                <td>1000 визиток<br>
-                                    для массовой раздачи</td>
-                                <td>1000 визиток<br>
-                                    европеского формата<br>на итальянской бумаге</td>
-                                <td>Создайте свой заказ</td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/untitled-1@2x.png"></td>
-                                <td><img src="images/untitled-3@2x.png"></td>
-                                <td class="order">
-                                    <table class="cart">
-                                        <tr>
-                                            <td class="text-left"><label for="count">Тираж</label></td>
-                                            <td>
-                                                <select id="count">
-                                                    <option>50 штук</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="text-left"><label for="paper">Бумага</label></td>
-                                            <td>
-                                                <select id="paper">
-                                                    <option>Картон белый 270 гр.</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="text-left"><label for="color">Цветность</label></td>
-                                            <td>
-                                                <select id="color">
-                                                    <option>4+4</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="text-left"><label for="time">Срочность</label></td>
-                                            <td>
-                                                <select id="time">
-                                                    <option>За 15 минут</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="text-left"><label for="design">Дизайн</label></td>
-                                            <td>
-                                                <select id="design">
-                                                    <option>Свой</option>
-                                                </select>
-                                                <button type="button">Загрузить</button>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr class="buttons">
-                                <td><span class="price">1 200₽ <button type="button">Заказать</button></span></td>
-                                <td><span class="price">4 900₽ <button type="button">Заказать</button></span></td>
-                                <td><span class="price">400 ₽ <button type="button">Заказать</button></span></td>
-                            </tr>
-                        </table-->
-                        <!--span class="table">1000 визиток<br>
-    для массовой раздачи</span><br>
-                        <img src="images/untitled-1@2x.png"><br>
-                        <span class="price">1 200₽ <button type="button">Заказать</button></span>
-                    </div>
-
-                    <div class="col-md-4 item">
-                        <span class="table">1000 визиток<br>
-европеского формата на итальянской бумаге</span><br>
-                        <div class="block">
-                            <img src="images/untitled-3@2x.png"><br>
-                            <span class="price">4 900₽ <button type="button">Заказать</button></span>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 item">
-                        <span class="table">Создайте свой заказ</span><br>
-                        <table class="cart">
-                            <tr>
-                                <td class="text-left"><label for="count">Тираж</label></td>
-                                <td>
-                                    <select id="count">
-                                        <option>50 штук</option>
-                                    </select>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-left"><label for="paper">Бумага</label></td>
-                                <td>
-                                    <select id="paper">
-                                        <option>Картон белый 270 гр.</option>
-                                    </select>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-left"><label for="color">Цветность</label></td>
-                                <td>
-                                    <select id="color">
-                                        <option>4+4</option>
-                                    </select>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-left"><label for="time">Срочность</label></td>
-                                <td>
-                                    <select id="time">
-                                        <option>За 15 минут</option>
-                                    </select>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-left"><label for="design">Дизайн</label></td>
-                                <td>
-                                    <select id="design">
-                                        <option>Свой</option>
-                                    </select>
-                                    <button type="button">Загрузить</button>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <span class="price">400 ₽ <button type="button">Заказать</button></span-->
-                    <!--/div-->
-
+                    <h3 style="margin-bottom: 5px;">Популярные заказы</h3>
                     <div class="clearfix"></div>
                     <div class="col-sm-12 col-md-12">
                         <ul class="list-unstyled popular-list">
@@ -279,14 +116,12 @@
                                             для массовой раздачи</p></div>
                                     </div>
                                     <div class="rowt">
-                                        <div class="middle"><img src="images/untitled-1@2x.png"></div>
+                                        <div class="middle"><img src="images/untitled-1@2x-min.png"></div>
                                     </div>
                                     <div class="rowt">
                                         <div class="last">
-
-                                                <span class="price">1 200₽</span>
-                                                <button type="button">Заказать</button>
-
+                                            <span class="price">1 200₽</span>
+                                            <button type="button">Заказать</button>
                                         </div>
                                     </div>
                                 </div>
@@ -298,20 +133,18 @@
                                             европеского формата<br>на итальянской бумаге</p></div>
                                     </div>
                                     <div class="rowt">
-                                        <div class="middle"><img src="images/untitled-3@2x.png"></div>
+                                        <div class="middle"><img src="images/untitled-3@2x-min.png"></div>
                                     </div>
                                     <div class="rowt">
                                         <div class="last">
-
-                                                <span class="price">4 900₽</span>
-                                                <button type="button">Заказать</button>
-
+                                            <span class="price">4 900₽</span>
+                                            <button type="button">Заказать</button>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li style="width: 300px;">
-                                <div class="item" style="    padding-left: 16px;">
+                                <div class="item" style="padding-left: 16px;">
                                     <div class="rowt">
                                         <div class="first"><p>Создайте свой заказ</p></div>
                                     </div>
@@ -366,10 +199,8 @@
                                     </div>
                                     <div class="rowt">
                                         <div class="last">
-
-                                                <span class="price">400₽</span>
-                                                <button type="button">Заказать</button>
-
+                                            <span class="price">400₽</span>
+                                            <button type="button">Заказать</button>
                                         </div>
                                     </div>
                                 </div>
@@ -432,29 +263,24 @@
                         </p>
                     </div>
                 </div>
-
-
             </div>
-
         </div>
         <div class="clearfix"></div>
         <div class="row section">
             <div class="image">
                 <div class="img">
-                    <img class="img-responsive" src="images/printlab@3x.png">
+                    <img class="img-responsive" src="images/pechat-visitok-stanok.jpg">
                     <div class="caption">
                     <span class="print">Печатаем на собственных немецких офсетных станках</span>
                     <button class="rounded">Подробнее</button>
                     <span class="colors">Закупаем только оригинальные тонеры и краски, чтобы качество оставалось на высоте.</span>
                 </div>
                 </div>
-
             </div>
-
             <div class="list">
                 <ul>
                     <li class="text-center">
-                        <img src="images/fill-57@2x.png"><br>
+                        <img src="images/fill-57@2x-min.png"><br>
                         <p>
                             <span class="name">Доставляем за 2 часа</span><br>
                             <span class="descr">Курьер позвонит вам перед выездом<br>
@@ -462,14 +288,14 @@
                         </p>
                     </li>
                     <li class="text-center">
-                        <img src="images/fill-96@2x.png"><br>
+                        <img src="images/fill-96@2x-min.png"><br>
                         <p>
                             <span class="name">Гарантируем безопасность</span><br>
                             <span class="descr">Мы принимаем платежи через<br>Яндекс.Деньги и Сбербанк России, это<br> гарантирует безопасность всех платежей <br>и сохранность ваших платёжных данных.</span>
                         </p>
                     </li>
                     <li class="text-center">
-                        <img src="images/fill-116@2x.png"><br>
+                        <img src="images/fill-116@2x-min.png"><br>
                         <p>
                             <span class="name">Обмениваем по первому требованию</span><br>
                             <span class="descr">Если заказ не соответствует немецкому<br> качеству и не оправдывает ваши<br> ожидания, мы заменим его по первому <br>требованию или вернём деньги.</span>
@@ -585,6 +411,43 @@
     </div>
 </footer>
 </div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript">
+
+    var map;
+    function initMap() {
+        var myLatlng = new google.maps.LatLng(59.9003337,30.4302394);
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatlng,
+            zoom: 17,
+            scrollwheel: false
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatlng
+
+        });
+        marker.setMap(map);
+    }
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOjoe37fjYzptlAdgynxWEBaUi2AFa9DE&callback=initMap">
+</script>
+<script type="text/javascript">
+    WebFontConfig = {
+        google: { families: [ 'Open+Sans:400,400italic,300italic,300:latin' ] }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })(); </script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
